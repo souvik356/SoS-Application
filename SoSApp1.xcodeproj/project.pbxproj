@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D846D3672C5D49CC00D7B925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846D3662C5D49CC00D7B925 /* AppDelegate.swift */; };
 		D846D3692C5D49CC00D7B925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846D3682C5D49CC00D7B925 /* SceneDelegate.swift */; };
-		D846D36B2C5D49CC00D7B925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846D36A2C5D49CC00D7B925 /* ViewController.swift */; };
+		D846D36B2C5D49CC00D7B925 /* SosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846D36A2C5D49CC00D7B925 /* SosViewController.swift */; };
 		D846D36E2C5D49CC00D7B925 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D846D36D2C5D49CC00D7B925 /* Base */; };
 		D846D3702C5D49CF00D7B925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D846D36F2C5D49CF00D7B925 /* Assets.xcassets */; };
 		D846D3732C5D49CF00D7B925 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D846D3722C5D49CF00D7B925 /* Base */; };
+		D846D37B2C5D578200D7B925 /* EmergencyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846D37A2C5D578200D7B925 /* EmergencyContactViewController.swift */; };
+		D8F5603A2C5E8B4B0051DC4E /* ContactPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F560392C5E8B4B0051DC4E /* ContactPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D846D3632C5D49CC00D7B925 /* SoSApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoSApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D846D3662C5D49CC00D7B925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D846D3682C5D49CC00D7B925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D846D36A2C5D49CC00D7B925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D846D36A2C5D49CC00D7B925 /* SosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SosViewController.swift; sourceTree = "<group>"; };
 		D846D36D2C5D49CC00D7B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D846D36F2C5D49CF00D7B925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D846D3722C5D49CF00D7B925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D846D3742C5D49CF00D7B925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D846D37A2C5D578200D7B925 /* EmergencyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactViewController.swift; sourceTree = "<group>"; };
+		D8F560392C5E8B4B0051DC4E /* ContactPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		D846D3652C5D49CC00D7B925 /* SoSApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				D846D3662C5D49CC00D7B925 /* AppDelegate.swift */,
-				D846D3682C5D49CC00D7B925 /* SceneDelegate.swift */,
-				D846D36A2C5D49CC00D7B925 /* ViewController.swift */,
+				D846D37F2C5D5A6A00D7B925 /* AppDelegate */,
+				D846D37E2C5D5A5800D7B925 /* Model */,
+				D846D37C2C5D5A3900D7B925 /* ViewController */,
 				D846D36C2C5D49CC00D7B925 /* Main.storyboard */,
 				D846D36F2C5D49CF00D7B925 /* Assets.xcassets */,
 				D846D3712C5D49CF00D7B925 /* LaunchScreen.storyboard */,
 				D846D3742C5D49CF00D7B925 /* Info.plist */,
 			);
 			path = SoSApp1;
+			sourceTree = "<group>";
+		};
+		D846D37C2C5D5A3900D7B925 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D846D36A2C5D49CC00D7B925 /* SosViewController.swift */,
+				D846D37A2C5D578200D7B925 /* EmergencyContactViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D846D37E2C5D5A5800D7B925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8F560392C5E8B4B0051DC4E /* ContactPerson.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D846D37F2C5D5A6A00D7B925 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D846D3682C5D49CC00D7B925 /* SceneDelegate.swift */,
+				D846D3662C5D49CC00D7B925 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D846D36B2C5D49CC00D7B925 /* ViewController.swift in Sources */,
+				D846D36B2C5D49CC00D7B925 /* SosViewController.swift in Sources */,
+				D846D37B2C5D578200D7B925 /* EmergencyContactViewController.swift in Sources */,
 				D846D3672C5D49CC00D7B925 /* AppDelegate.swift in Sources */,
 				D846D3692C5D49CC00D7B925 /* SceneDelegate.swift in Sources */,
+				D8F5603A2C5E8B4B0051DC4E /* ContactPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C6TC4MY8Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoSApp1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +339,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.souvik.SoSApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4C6TC4MY8Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoSApp1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +371,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.souvik.SoSApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

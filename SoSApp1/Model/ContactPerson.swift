@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import ContactsUI
+
+struct ContactPerson: Codable{
+    let id: String
+    let name: String
+    let contact: [String]
+}
